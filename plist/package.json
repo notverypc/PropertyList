@@ -1,0 +1,25 @@
+{
+    "name": "plist",
+    "displayName": "PropertyList(XML)",
+    "description": "PropertyList(XML)",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "plist",
+            "aliases": ["Property List (XML)", "plist"],
+            "extensions": [".plist",".recipe"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "plist",
+            "scopeName": "text.xml.plist",
+            "path": "./syntaxes/plist.tmLanguage"
+        }]
+    }
+}
